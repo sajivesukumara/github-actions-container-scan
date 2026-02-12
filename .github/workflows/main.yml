@@ -24,7 +24,7 @@ jobs:
           syft myapp:latest -o json > sbom.json
       
       - name: Scan vulnerabilities
-        uses: aquasecurity/trivy-action@v0.28.0
+        uses: aquasecurity/trivy-action@v0.33.1
         with:
           image-ref: myapp:latest
           severity: HIGH,CRITICAL
